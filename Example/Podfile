@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DORM_Example' do
+  pod 'DORM', :path => '../'
+
+  target 'DORM_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
