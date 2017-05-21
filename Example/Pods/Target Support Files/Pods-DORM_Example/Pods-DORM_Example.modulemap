@@ -1,0 +1,6 @@
+framework module Pods_DORM_Example {
+  umbrella header "Pods-DORM_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/skrth00@gmail.com/DORM'
+  s.homepage         = 'https://github.com/Dormmate/DORMLibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'skrth00@gmail.com' => 'skrth00@naver.com' }
-  s.source           = { :git => 'https://github.com/skrth00@gmail.com/DORM.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Dormmate/DORMLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
