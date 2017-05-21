@@ -22,7 +22,9 @@ pod "DORM"
 
 ## Author
 
-skrth00@gmail.com, skrth00@naver.com
+MinSeob Yoon : yoonminseob2@naver.com
+HanKyoung Jeon : skrth00@gmail.com 
+ 
 
 ## License
 
