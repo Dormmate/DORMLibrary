@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A927B0C6659BF7929971D05A7769850 /* Pods-DORM_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905D6B26D18041E01DD82EFBB3FD370 /* Pods-DORM_Example-dummy.m */; };
+		37127B4E1ED341BA00D0FFF9 /* WaterMarkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37127B4D1ED341BA00D0FFF9 /* WaterMarkUtil.swift */; };
+		37127B501ED341C300D0FFF9 /* InstagramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37127B4F1ED341C300D0FFF9 /* InstagramManager.swift */; };
 		372BED561ED1ECE900B95CFF /* DeviceResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED4F1ED1ECE900B95CFF /* DeviceResize.swift */; };
 		372BED571ED1ECE900B95CFF /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED501ED1ECE900B95CFF /* iOSDevCenters+GIF.swift */; };
 		372BED581ED1ECE900B95CFF /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED511ED1ECE900B95CFF /* UIButton+Extension.swift */; };
@@ -15,13 +17,8 @@
 		372BED5A1ED1ECE900B95CFF /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED531ED1ECE900B95CFF /* UILabel+Extension.swift */; };
 		372BED5B1ED1ECE900B95CFF /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED541ED1ECE900B95CFF /* UITextField+Extension.swift */; };
 		372BED5C1ED1ECE900B95CFF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED551ED1ECE900B95CFF /* UIView+Extension.swift */; };
-		372BED641ED1ECFB00B95CFF /* BaseTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED5D1ED1ECFB00B95CFF /* BaseTabbarVC.swift */; };
-		372BED651ED1ECFB00B95CFF /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED5E1ED1ECFB00B95CFF /* BaseVC.swift */; };
-		372BED661ED1ECFB00B95CFF /* GeneralView_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED5F1ED1ECFB00B95CFF /* GeneralView_Example.swift */; };
-		372BED671ED1ECFB00B95CFF /* TabbarItem_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED601ED1ECFB00B95CFF /* TabbarItem_Example.swift */; };
-		372BED681ED1ECFB00B95CFF /* TabbarItem_Example2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED611ED1ECFB00B95CFF /* TabbarItem_Example2.swift */; };
-		372BED691ED1ECFB00B95CFF /* TableView_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED621ED1ECFB00B95CFF /* TableView_Example.swift */; };
-		372BED6A1ED1ECFB00B95CFF /* TableViewCell_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BED631ED1ECFB00B95CFF /* TableViewCell_Example.swift */; };
+		379607851ED5E624002D806B /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379607841ED5E624002D806B /* UINavigationController+Extension.swift */; };
+		379607871ED5E67C002D806B /* UITabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379607861ED5E67C002D806B /* UITabBarController+Extension.swift */; };
 		5ECEDEDA4CD1F4D0B8D3883A91988FB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		94C460D5EBF7D0D9C4BEB4A3EA7ED194 /* Pods-DORM_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1BCB1DE0F3B8F6F968927F576BE18FF /* Pods-DORM_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A47FDF37A0A05F16EB4671FC1A3E184F /* Pods-DORM_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 885F66878ADD4A549D9EA4A6C742D08B /* Pods-DORM_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +47,8 @@
 		2CFB6B6912BD47BDBB98B2064DC1697D /* Pods-DORM_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DORM_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2D6A5F782CC34BDB22F1E6CAD209DF9F /* Pods-DORM_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DORM_Example.modulemap"; sourceTree = "<group>"; };
 		32D249B150961BDB2C8652A8C7C0CAE3 /* Pods-DORM_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DORM_Tests-dummy.m"; sourceTree = "<group>"; };
+		37127B4D1ED341BA00D0FFF9 /* WaterMarkUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterMarkUtil.swift; sourceTree = "<group>"; };
+		37127B4F1ED341C300D0FFF9 /* InstagramManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramManager.swift; sourceTree = "<group>"; };
 		372BED4F1ED1ECE900B95CFF /* DeviceResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceResize.swift; sourceTree = "<group>"; };
 		372BED501ED1ECE900B95CFF /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		372BED511ED1ECE900B95CFF /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -57,13 +56,8 @@
 		372BED531ED1ECE900B95CFF /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		372BED541ED1ECE900B95CFF /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		372BED551ED1ECE900B95CFF /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		372BED5D1ED1ECFB00B95CFF /* BaseTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarVC.swift; sourceTree = "<group>"; };
-		372BED5E1ED1ECFB00B95CFF /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
-		372BED5F1ED1ECFB00B95CFF /* GeneralView_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralView_Example.swift; sourceTree = "<group>"; };
-		372BED601ED1ECFB00B95CFF /* TabbarItem_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItem_Example.swift; sourceTree = "<group>"; };
-		372BED611ED1ECFB00B95CFF /* TabbarItem_Example2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItem_Example2.swift; sourceTree = "<group>"; };
-		372BED621ED1ECFB00B95CFF /* TableView_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView_Example.swift; sourceTree = "<group>"; };
-		372BED631ED1ECFB00B95CFF /* TableViewCell_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell_Example.swift; sourceTree = "<group>"; };
+		379607841ED5E624002D806B /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		379607861ED5E67C002D806B /* UITabBarController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extension.swift"; sourceTree = "<group>"; };
 		3905D6B26D18041E01DD82EFBB3FD370 /* Pods-DORM_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DORM_Example-dummy.m"; sourceTree = "<group>"; };
 		49B6BDF6697CCF3A99F434CC29EACE2F /* DORM-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DORM-prefix.pch"; sourceTree = "<group>"; };
 		539A54588EEE9492FE39FE6C90BBF57D /* Pods-DORM_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DORM_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,13 +143,8 @@
 		63DC2E0909CA97DF8589C3284D598C53 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				372BED5D1ED1ECFB00B95CFF /* BaseTabbarVC.swift */,
-				372BED5E1ED1ECFB00B95CFF /* BaseVC.swift */,
-				372BED5F1ED1ECFB00B95CFF /* GeneralView_Example.swift */,
-				372BED601ED1ECFB00B95CFF /* TabbarItem_Example.swift */,
-				372BED611ED1ECFB00B95CFF /* TabbarItem_Example2.swift */,
-				372BED621ED1ECFB00B95CFF /* TableView_Example.swift */,
-				372BED631ED1ECFB00B95CFF /* TableViewCell_Example.swift */,
+				37127B4D1ED341BA00D0FFF9 /* WaterMarkUtil.swift */,
+				37127B4F1ED341C300D0FFF9 /* InstagramManager.swift */,
 				372BED4F1ED1ECE900B95CFF /* DeviceResize.swift */,
 				372BED501ED1ECE900B95CFF /* iOSDevCenters+GIF.swift */,
 				372BED511ED1ECE900B95CFF /* UIButton+Extension.swift */,
@@ -163,6 +152,8 @@
 				372BED531ED1ECE900B95CFF /* UILabel+Extension.swift */,
 				372BED541ED1ECE900B95CFF /* UITextField+Extension.swift */,
 				372BED551ED1ECE900B95CFF /* UIView+Extension.swift */,
+				379607841ED5E624002D806B /* UINavigationController+Extension.swift */,
+				379607861ED5E67C002D806B /* UITabBarController+Extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -381,21 +372,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372BED681ED1ECFB00B95CFF /* TabbarItem_Example2.swift in Sources */,
 				C51A675254C2C153ADAB4C054173712F /* DORM-dummy.m in Sources */,
-				372BED641ED1ECFB00B95CFF /* BaseTabbarVC.swift in Sources */,
 				372BED581ED1ECE900B95CFF /* UIButton+Extension.swift in Sources */,
+				379607851ED5E624002D806B /* UINavigationController+Extension.swift in Sources */,
 				372BED5C1ED1ECE900B95CFF /* UIView+Extension.swift in Sources */,
 				372BED5B1ED1ECE900B95CFF /* UITextField+Extension.swift in Sources */,
-				372BED671ED1ECFB00B95CFF /* TabbarItem_Example.swift in Sources */,
 				372BED5A1ED1ECE900B95CFF /* UILabel+Extension.swift in Sources */,
-				372BED661ED1ECFB00B95CFF /* GeneralView_Example.swift in Sources */,
 				372BED571ED1ECE900B95CFF /* iOSDevCenters+GIF.swift in Sources */,
+				37127B4E1ED341BA00D0FFF9 /* WaterMarkUtil.swift in Sources */,
 				372BED561ED1ECE900B95CFF /* DeviceResize.swift in Sources */,
 				372BED591ED1ECE900B95CFF /* UIColor+Extension.swift in Sources */,
-				372BED6A1ED1ECFB00B95CFF /* TableViewCell_Example.swift in Sources */,
-				372BED691ED1ECFB00B95CFF /* TableView_Example.swift in Sources */,
-				372BED651ED1ECFB00B95CFF /* BaseVC.swift in Sources */,
+				37127B501ED341C300D0FFF9 /* InstagramManager.swift in Sources */,
+				379607871ED5E67C002D806B /* UITabBarController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

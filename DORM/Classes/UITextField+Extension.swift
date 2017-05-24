@@ -1,9 +1,9 @@
 //
 //  UITextField+Extension.swift
-//  LibraryTest
+//  DORM
 //
-//  Created by 윤민섭 on 2017. 2. 22..
-//  Copyright © 2017년 윤민섭. All rights reserved.
+//  Created by Dormmate on 2017. 5. 4..
+//  Copyright © 2017 Dormmate. All rights reserved.
 //
 
 import UIKit
@@ -36,12 +36,12 @@ extension UITextField: UITextFieldDelegate{
     /*
      키보드 올라갈 때 화면 올림
      사용법 : textField.setKeyboardNotification(target: self.view)
-    
+     
      override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        textField.endEditing(true)
-        textField.setEmojiFlag()
+     textField.endEditing(true)
+     textField.setEmojiFlag()
      }
-    */
+     */
     
     
     public func setKeyboardNotification(target: UIView!){
@@ -73,6 +73,8 @@ extension UITextField: UITextFieldDelegate{
         let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
         let changeInHeight = -(keyboardFrame.height)
         let changeInEmoji : CGFloat = -(42 * heightRatio)
+        let initialLanguage = self.textInputMode?.primaryLanguage
+
         
         UIView.animate(withDuration: animationDuration, animations: { () -> Void in
             
@@ -81,11 +83,11 @@ extension UITextField: UITextFieldDelegate{
                 targetView.frame.origin.y += changeInEmoji
                 emojiFlag = 1
                 
-            } else if self.textInputMode?.primaryLanguage == "ko-KR" && emojiFlag == 0 {
+            } else if self.textInputMode?.primaryLanguage == initialLanguage && emojiFlag == 0 {
                 
                 targetView.frame.origin.y += changeInHeight
                 
-            } else if self.textInputMode?.primaryLanguage == "ko-KR" && emojiFlag == 1 {
+            } else if self.textInputMode?.primaryLanguage == initialLanguage && emojiFlag == 1 {
                 
                 targetView.frame.origin.y += (42 * heightRatio)
                 emojiFlag = 0
@@ -98,8 +100,15 @@ extension UITextField: UITextFieldDelegate{
             }
         })
         
+        //범위 밖 충돌 현상 또는 3rd party keyboard 버그 발생시
+        if targetView.frame.origin.y < -258.0 || keyboardFrame.height == 0.0{
+            
+            targetView.frame.origin.y = -216.0
+        }
+        
     }
     
+       
 }
 
 

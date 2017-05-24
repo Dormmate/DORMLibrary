@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2E80C2AB534549027B2DEA5B /* Pods_DORM_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA0817C67EA8E8A048D6458 /* Pods_DORM_Tests.framework */; };
+		377B496A1ED5E0CE0078F0D0 /* GeneralView_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B49651ED5E0CE0078F0D0 /* GeneralView_Example.swift */; };
+		377B496B1ED5E0CE0078F0D0 /* TabbarItem_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B49661ED5E0CE0078F0D0 /* TabbarItem_Example.swift */; };
+		377B496C1ED5E0CE0078F0D0 /* TabbarItem_Example2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B49671ED5E0CE0078F0D0 /* TabbarItem_Example2.swift */; };
+		377B496D1ED5E0CE0078F0D0 /* TableView_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B49681ED5E0CE0078F0D0 /* TableView_Example.swift */; };
+		377B496E1ED5E0CE0078F0D0 /* TableViewCell_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B49691ED5E0CE0078F0D0 /* TableViewCell_Example.swift */; };
+		377B49701ED5E1720078F0D0 /* WaterMark_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B496F1ED5E1720078F0D0 /* WaterMark_Example.swift */; };
+		377B49721ED5E1980078F0D0 /* InstagramManager_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B49711ED5E1980078F0D0 /* InstagramManager_Example.swift */; };
+		379607811ED5E5D5002D806B /* BaseTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379607801ED5E5D5002D806B /* BaseTabbarVC.swift */; };
+		379607831ED5E5FF002D806B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379607821ED5E5FF002D806B /* BaseVC.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +38,15 @@
 
 /* Begin PBXFileReference section */
 		08A33331FD82F69C1E33053C /* Pods-DORM_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DORM_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DORM_Tests/Pods-DORM_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		377B49651ED5E0CE0078F0D0 /* GeneralView_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralView_Example.swift; sourceTree = "<group>"; };
+		377B49661ED5E0CE0078F0D0 /* TabbarItem_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItem_Example.swift; sourceTree = "<group>"; };
+		377B49671ED5E0CE0078F0D0 /* TabbarItem_Example2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItem_Example2.swift; sourceTree = "<group>"; };
+		377B49681ED5E0CE0078F0D0 /* TableView_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView_Example.swift; sourceTree = "<group>"; };
+		377B49691ED5E0CE0078F0D0 /* TableViewCell_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell_Example.swift; sourceTree = "<group>"; };
+		377B496F1ED5E1720078F0D0 /* WaterMark_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterMark_Example.swift; sourceTree = "<group>"; };
+		377B49711ED5E1980078F0D0 /* InstagramManager_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramManager_Example.swift; sourceTree = "<group>"; };
+		379607801ED5E5D5002D806B /* BaseTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarVC.swift; sourceTree = "<group>"; };
+		379607821ED5E5FF002D806B /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DORM_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DORM_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +61,10 @@
 		80259E9009EEEF95C3124591 /* Pods-DORM_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DORM_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DORM_Example/Pods-DORM_Example.release.xcconfig"; sourceTree = "<group>"; };
 		844554E21D8F8DF47D54AC24 /* Pods-DORM_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DORM_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DORM_Example/Pods-DORM_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AAA0817C67EA8E8A048D6458 /* Pods_DORM_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DORM_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0CA4E62B28DE98848866966 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C0CA4E62B28DE98848866966 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CD26CC4150D2E3F7B655CE73 /* Pods_DORM_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DORM_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5A68B17A25A441A5B0962CC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		DC5E9F19841227FD3E32ACF5 /* DORM.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DORM.podspec; path = ../DORM.podspec; sourceTree = "<group>"; };
+		D5A68B17A25A441A5B0962CC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DC5E9F19841227FD3E32ACF5 /* DORM.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DORM.podspec; path = ../DORM.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +113,15 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				377B49651ED5E0CE0078F0D0 /* GeneralView_Example.swift */,
+				377B49661ED5E0CE0078F0D0 /* TabbarItem_Example.swift */,
+				377B49671ED5E0CE0078F0D0 /* TabbarItem_Example2.swift */,
+				379607801ED5E5D5002D806B /* BaseTabbarVC.swift */,
+				379607821ED5E5FF002D806B /* BaseVC.swift */,
+				377B49681ED5E0CE0078F0D0 /* TableView_Example.swift */,
+				377B49691ED5E0CE0078F0D0 /* TableViewCell_Example.swift */,
+				377B496F1ED5E1720078F0D0 /* WaterMark_Example.swift */,
+				377B49711ED5E1980078F0D0 /* InstagramManager_Example.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -361,7 +388,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377B496D1ED5E0CE0078F0D0 /* TableView_Example.swift in Sources */,
+				379607831ED5E5FF002D806B /* BaseVC.swift in Sources */,
+				379607811ED5E5D5002D806B /* BaseTabbarVC.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				377B496B1ED5E0CE0078F0D0 /* TabbarItem_Example.swift in Sources */,
+				377B49701ED5E1720078F0D0 /* WaterMark_Example.swift in Sources */,
+				377B496E1ED5E0CE0078F0D0 /* TableViewCell_Example.swift in Sources */,
+				377B496A1ED5E0CE0078F0D0 /* GeneralView_Example.swift in Sources */,
+				377B496C1ED5E0CE0078F0D0 /* TabbarItem_Example2.swift in Sources */,
+				377B49721ED5E1980078F0D0 /* InstagramManager_Example.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

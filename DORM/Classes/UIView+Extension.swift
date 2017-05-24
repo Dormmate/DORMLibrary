@@ -1,12 +1,19 @@
 //
 //  UIView+Extension.swift
-//  LibraryTest
+//  DORM
 //
-//  Created by 윤민섭 on 2017. 2. 22..
-//  Copyright © 2017년 윤민섭. All rights reserved.
+//  Created by Dormmate on 2017. 5. 4..
+//  Copyright © 2017 Dormmate. All rights reserved.
 //
 
 import UIKit
+
+/*
+ 
+ 테스트 iPhone 을 7에 맞춰두고 디자인가이드에 맞게 작업한다.
+ Set the test iPhone to 7 and work with the design guide.
+ 
+ */
 
 let userDevice = DeviceResize(testDeviceModel: DeviceType.IPHONE_7,userDeviceModel: (Float(ScreenSize.SCREEN_WIDTH),Float(ScreenSize.SCREEN_HEIGHT)))
 
@@ -15,7 +22,7 @@ var widthRatio = userDevice.userDeviceWidth()
 
 
 extension UIView {
-
+    
     public var x: CGFloat {
         get {
             return self.frame.origin.x
@@ -60,9 +67,10 @@ extension UIView {
             self.layer.borderWidth = value
         }
     }
-
     
-    //프레임에 맞게 ver 1.
+    
+    // 프레임에 맞게 ver 1.
+    // initialization frame using ratio
     
     public func rframe(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat){
         self.frame = CGRect(x: x * widthRatio, y: y * heightRatio, width: width * widthRatio, height: height * heightRatio)
@@ -76,7 +84,7 @@ extension UIView {
     
     
     //중앙정렬 ver 1.
- 
+    
     public func rcenter(y: CGFloat,width: CGFloat,height: CGFloat, targetWidth: CGFloat){
         self.frame = CGRect(x: targetWidth*widthRatio/2 - width/2*widthRatio, y: y*heightRatio, width: width*widthRatio, height: height*heightRatio)
     }
@@ -94,9 +102,9 @@ extension UIView {
     }
     
     /*
-    버튼 영역 확장
-    사용법 : view.enlargeArea(target: self, action: #selector(function), view: view, size: size)
-    */
+     버튼 영역 확장 (enlarge your button area)
+     사용법 : view.enlargeArea(target: self, action: #selector(function), view: view, size: size)
+     */
     
     public func enlargeArea(target: NSObject, action: Selector ,view: UIView ,size: CGFloat){
         let widthSize = size * widthRatio
@@ -109,9 +117,9 @@ extension UIView {
     
     
     /*
-    라벨이나 이미지도 버튼이 되게
-    사용법 : view.addAction(target:self ,action: #selector(function))
-    */
+     라벨이나 이미지도 버튼이 되게 (Make label and image to button)
+     사용법 : view.addAction(target:self ,action: #selector(function))
+     */
     
     public func addAction(target: NSObject,action: Selector){
         let tapGestureRecognizer = UITapGestureRecognizer(target: target, action: action)
@@ -119,11 +127,22 @@ extension UIView {
         self.addGestureRecognizer(tapGestureRecognizer)
     }
     
+    /*
+     롱 클릭 이벤트
+     */
+    
+    public func addLongAction(target: NSObject, action: Selector){
+        let longGestureRecognizer = UILongPressGestureRecognizer(target: target, action: action)
+        longGestureRecognizer.minimumPressDuration = 0.5
+        self.isUserInteractionEnabled = true
+        self.addGestureRecognizer(longGestureRecognizer)
+    }
+    
     
     /*
-    뷰에 원 그리기
-    사용법 : self.view.drawCircle(startX: 100, startY: 100, radius: 50, color: UIColor.black)
-    */
+     뷰에 원 그리기 (Draw circle in your view)
+     사용법 : self.view.drawCircle(startX: 100, startY: 100, radius: 50, color: UIColor.black)
+     */
     
     public func drawCircle(startX: CGFloat,startY:CGFloat,radius: CGFloat,color: UIColor){
         let circlePath = UIBezierPath(arcCenter: CGPoint(x: startX*widthRatio,y: startY*heightRatio), radius: radius*widthRatio, startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
@@ -136,7 +155,7 @@ extension UIView {
     }
     
     /*
-     뷰에 선 그리기
+     뷰에 선 그리기 (Draw line in your view)
      사용법 : self.view.drawLine
      */
     
@@ -146,8 +165,8 @@ extension UIView {
         line.backgroundColor = color
         self.addSubview(line)
     }
-
-
+    
+    
 }
 
 

@@ -1,13 +1,20 @@
 //
 //  BaseView.swift
-//  ViewCode
+//  DORM
 //
-//  Created by 윤민섭 on 2017. 1. 26..
-//  Copyright © 2017년 윤민섭. All rights reserved.
+//  Created by Dormmate on 2017. 5. 4..
+//  Copyright © 2017 Dormmate. All rights reserved.
 //
 
 import UIKit
 
+/*
+ 
+ 아이폰의 화면 비율에 맞게 위치와 높이, 너비를 조정해주는 클래스이다.
+ 
+ It is a class that adjusts the position, height and width according to the aspect ratio of the iPhone.
+ 
+ */
 
 
 struct ScreenSize

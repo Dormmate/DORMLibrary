@@ -1,4 +1,5 @@
 # DORM
+It is Assistant Library For New iOS Developer. So If you use this library, you can easily get familiar with iOS Development. We are rooting for you!
 
 [![CI Status](http://img.shields.io/travis/skrth00@gmail.com/DORM.svg?style=flat)](https://travis-ci.org/skrth00@gmail.com/DORM)
 [![Version](https://img.shields.io/cocoapods/v/DORM.svg?style=flat)](http://cocoapods.org/pods/DORM)
@@ -17,12 +18,14 @@ DORM is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "DORM"
+pod 'DORM', '~> 0.1.3’
 ```
 
 ## Author
 
+Dormmate
 MinSeob Yoon : yoonminseob2@naver.com
+
 HanKyoung Jeon : skrth00@gmail.com 
  
 

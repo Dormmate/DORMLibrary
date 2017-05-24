@@ -1,21 +1,21 @@
 //
 //  iOSDevCenters+GIF.swift
-//  GIF-Swift
+//  DORM
 //
-//  Created by iOSDevCenters on 11/12/15.
-//  Copyright © 2016 iOSDevCenters. All rights reserved.
+//  Created by Dormmate on 2017. 5. 4..
+//  Copyright © 2017 Dormmate. All rights reserved.
 //
 import UIKit
 import ImageIO
 
 /*
-사용법 :
-let launchGif = UIImage.gifImageWithName(name: "launchSplash")
-imageView = UIImageView(image: launchGif)
-imageView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+ 사용법 :
+ let launchGif = UIImage.gifImageWithName(name: "launchSplash")
+ imageView = UIImageView(image: launchGif)
+ imageView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
  
-사용 후 반드시 imageView 를 nil 로 해주고 removeAllSubviews 
-*/
+ 사용 후 반드시 imageView 를 nil 로 해주고 removeAllSubviews
+ */
 
 
 extension UIImage {
@@ -55,11 +55,11 @@ extension UIImage {
         
         var delayObject: AnyObject = unsafeBitCast(
             CFDictionaryGetValue(gifProperties,
-                        Unmanaged.passUnretained(kCGImagePropertyGIFUnclampedDelayTime).toOpaque()),
+                                 Unmanaged.passUnretained(kCGImagePropertyGIFUnclampedDelayTime).toOpaque()),
             to: AnyObject.self)
         if delayObject.doubleValue == 0 {
             delayObject = unsafeBitCast(CFDictionaryGetValue(gifProperties,
-                                Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()), to: AnyObject.self)
+                                                             Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()), to: AnyObject.self)
         }
         
         delay = delayObject as! Double
@@ -153,7 +153,7 @@ extension UIImage {
         }
         
         let animation = UIImage.animatedImage(with: frames,
-                                                        duration: Double(duration) / 1000.0)
+                                              duration: Double(duration) / 1000.0)
         
         return animation
     }

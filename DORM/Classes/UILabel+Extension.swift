@@ -1,19 +1,19 @@
 //
 //  UILabel+Extension.swift
-//  LibraryTest
+//  DORM
 //
-//  Created by 윤민섭 on 2017. 2. 22..
-//  Copyright © 2017년 윤민섭. All rights reserved.
+//  Created by Dormmate on 2017. 5. 4..
+//  Copyright © 2017 Dormmate. All rights reserved.
 //
 
 import UIKit
 
 extension UILabel{
-
+    
     /*
-    라벨 지정
-    사용법 :  label.setLabel(text: "hi", align: .center, size: 40, target: self.view)
-    */
+     라벨 지정 (set label)
+     사용법(usage) :  label.setLabel(text: "hi", align: .center, size: 40, target: self.view)
+     */
     
     public func setLabel(text: String, align: NSTextAlignment, fontName: String = ".SFUIText", fontSize: CGFloat, color: UIColor = UIColor.black,targetView: UIView){
         self.text = text
@@ -22,7 +22,7 @@ extension UILabel{
         targetView.addSubview(self)
     }
     
-    // 행간
+    // 행간 (line spacing)
     
     public func setLineHeight(lineHeight: CGFloat) {
         let text = self.text
@@ -36,12 +36,12 @@ extension UILabel{
         }
     }
     
-    // 자간
+    // 자간 (chharacter spacing)
     
     public func addTextSpacing(spacing: CGFloat){
         let attributedString = NSMutableAttributedString(string: self.text!)
         attributedString.addAttribute(NSKernAttributeName, value: spacing, range: NSRange(location: 0, length: self.text!.characters.count))
         self.attributedText = attributedString
     }
-
+    
 }

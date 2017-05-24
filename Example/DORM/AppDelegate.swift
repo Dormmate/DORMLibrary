@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  DORM
 //
-//  Created by skrth00@gmail.com on 05/21/2017.
-//  Copyright (c) 2017 skrth00@gmail.com. All rights reserved.
+//  Created by Dormmate on 2017. 5. 4..
+//  Copyright © 2017 Dormmate. All rights reserved.
 //
 
 import UIKit

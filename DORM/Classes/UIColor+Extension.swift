@@ -1,15 +1,17 @@
 //
 //  UIColor+Extension.swift
-//  LibraryTest
+//  DORM
 //
-//  Created by 윤민섭 on 2017. 2. 22..
-//  Copyright © 2017년 윤민섭. All rights reserved.
+//  Created by Dormmate on 2017. 5. 4..
+//  Copyright © 2017 Dormmate. All rights reserved.
 //
 
 import UIKit
 
 extension UIColor {
     
+    // 메인 색상을 지정하는 함수이다
+    // It is function for set main color in your app
     public static var mainColor:UIColor {
         get{
             return UIColor(r: 68, g: 67, b: 68, alpha: 1)
