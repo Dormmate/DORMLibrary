@@ -9,44 +9,36 @@
 import Foundation
 import UIKit
 
-class WaterMarkUtil{
+open class WaterMarkUtil{
     
     
-    let userDevice = DeviceResize(testDeviceModel: DeviceType.IPHONE_7,userDeviceModel: (Float(ScreenSize.SCREEN_WIDTH),Float(ScreenSize.SCREEN_HEIGHT)))
-    
-    
-    class var sharedUtil: WaterMarkUtil {
+    open class var sharedUtil: WaterMarkUtil {
         struct Singleton {
             static let instance = WaterMarkUtil()
         }
         return Singleton.instance
     }
     
-    func waterMarking(targetView:UIView, waterMarkImage:UIImage, completion :  (UIImage)->Void){
+    open func waterMarking(targetView : UIView, waterMarkImage : UIImage, completion : (UIImage)->Void){
         
         
-        let heightRatio = userDevice.userDeviceHeight()
-        let widthRatio = userDevice.userDeviceWidth()
+        let copiedView = targetView
+        //you can create new view object
+        //targetView.copyView()
         
-        let copiedView = targetView//.copyView()
-        
-        //1. targetView에 ImageView를 받아온 이미지로 init한다.
         let imageView = UIImageView.init(image: waterMarkImage)
         
-        imageView.frame = CGRect(x:(targetView.frame.size.width - 65 * widthRatio),
-                                 y:(targetView.frame.size.height - 42 * heightRatio),
-                                 width: 55 * widthRatio,
-                                 height: 32 * heightRatio)
+        imageView.frame = CGRect(x:(targetView.frame.size.width - 65.multiplyWidthRatio()),
+                                 y:(targetView.frame.size.height - 42.multiplyHeightRatio()),
+                                 width: 55.multiplyWidthRatio(),
+                                 height: 32.multiplyHeightRatio())
         
         copiedView.addSubview(imageView)
         
-        //2. targetVIew를 UIImage로 변환
-        let wmImage = UIImage(view:copiedView)
-        
-        
-        //3. return
-        completion(wmImage)
-        //return wmImage
+        let waterMarkedImage = UIImage(view:copiedView)
+
+        completion(waterMarkedImage)
+
     }
     
     
@@ -73,7 +65,7 @@ extension UIView
         return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as? UIView
     }
 }
-//이거쓰면 사진첩에들어가짐...
+//save in photoAlbum
 //extension UIImage {
 //    convenience init(view: UIView) {
 //        //UIGraphicsBeginImageContext(view.frame.size)

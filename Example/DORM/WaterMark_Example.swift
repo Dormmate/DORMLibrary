@@ -7,24 +7,34 @@
 //
 
 import UIKit
+import DORM
 
 class WaterMark_Example: UIViewController {
-
+    
+    
+    var imageView = UIImageView()
+    var changeBtn = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        WaterMarkUtil.sharedUtil.waterMarking(targetView: self.imageView, waterMarkImage: UIImage(named:"watermark")!, completion: { (result) in
-//            
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let shareVC = storyboard.instantiateViewController(withIdentifier: "sharingVC")
-//            
-//            SharingViewController.receivedImage = result
-//            
-//            self.present(shareVC, animated: false, completion: nil)
-//            
-//        })
+        imageView.rcenter(y: 200, width: 300, height: 250, targetWidth: 375)
+        imageView.image = UIImage(named:"planet")
         
-        // Do any additional setup after loading the view.
+        changeBtn.rframe(x: 200, y: 50, width: 100, height: 100)
+        changeBtn.layer.borderWidth = 2
+        changeBtn.setButton(title: "WaterMarking", targetController: self, action: #selector(executeAction), fontSize: 12, color: UIColor.black, self.view)
+        
+        view.addSubview(imageView)
+
+    }
+    
+    func executeAction(){
+    
+        WaterMarkUtil.sharedUtil.waterMarking(targetView: imageView, waterMarkImage: UIImage(named:"watermark-1")!) { (result) in
+            imageView.image = result
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {

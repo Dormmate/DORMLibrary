@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import Photos
 
-class InstagramManager: NSObject, UIDocumentInteractionControllerDelegate {
+open class InstagramManager: NSObject, UIDocumentInteractionControllerDelegate {
     
     private let kInstagramURL = "instagram://app"
     private let kUTI = "com.instagram.exclusivegram"
@@ -21,14 +21,14 @@ class InstagramManager: NSObject, UIDocumentInteractionControllerDelegate {
     var documentInteractionController = UIDocumentInteractionController()
     
     // singleton manager
-    class var sharedManager: InstagramManager {
+    open class var sharedManager: InstagramManager {
         struct Singleton {
             static let instance = InstagramManager()
         }
         return Singleton.instance
     }
     
-    func postImageToInstagramWithCaption(imageInstagram: UIImage, instagramCaption: String, view: UIView) {
+    open func postImageToInstagramWithCaption(imageInstagram: UIImage, instagramCaption: String, view: UIView) {
         // called to post image with caption to the instagram application
         
         let instagramURL = NSURL(string: kInstagramURL)
@@ -69,12 +69,8 @@ class InstagramManager: NSObject, UIDocumentInteractionControllerDelegate {
 
     
     
-    func sendImageDirectlyToInstagram(image: UIImage) {
-        
-        
-//        if error != nil {
-//            print(error)
-//        }
+    open func sendImageDirectlyToInstagram(image: UIImage) {
+
         
         let fetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]

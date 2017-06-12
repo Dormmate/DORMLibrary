@@ -18,12 +18,13 @@ DORM is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'DORM', '~> 0.1.3’
+pod 'DORM', '~> 0.1.4’
 ```
 
 ## Author
 
 Dormmate
+
 MinSeob Yoon : yoonminseob2@naver.com
 
 HanKyoung Jeon : skrth00@gmail.com 

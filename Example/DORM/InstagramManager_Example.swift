@@ -23,7 +23,7 @@ class InstagramManager_Example: UIViewController {
         
         instaImageView.image = UIImage(named:"instaImg")
         
-        let instagram = UITapGestureRecognizer(target:self, action:#selector(instaAction))
+        let instagram = UITapGestureRecognizer(target:self, action:#selector(instaAction1))
         instaImageView.isUserInteractionEnabled = true
         instaImageView.addGestureRecognizer(instagram)
         
@@ -37,26 +37,28 @@ class InstagramManager_Example: UIViewController {
         
     }
     
-    func instaAction(){
-        
+    func instaAction1(){
         
         //If you want to post by copying item
-        //InstagramManager.sharedManager.postImageToInstagramWithCaption(imageInstagram: iImage!, instagramCaption: "caption", view: self.view)
-        
-       
+        InstagramManager.sharedManager.postImageToInstagramWithCaption(imageInstagram: iImage!, instagramCaption: "caption", view: self.view)
+    
+    }
+    
+    func instaAction2(){
+    
         //If you want to save in photoalbum and use photo in instagram
-        //UIImageWriteToSavedPhotosAlbum(SharingViewController.receivedImage!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        InstagramManager.sharedManager.sendImageDirectlyToInstagram(image: iImage!)
         
-       
+        UIImageWriteToSavedPhotosAlbum(iImage!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
         
     }
     
     
-//    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-//        
-//        InstagramManager.sharedManager.sendImageDirectlyToInstagram(image: image)
-//        
-//    }
+    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        
+        InstagramManager.sharedManager.sendImageDirectlyToInstagram(image: image)
+        
+    }
     
 
 
